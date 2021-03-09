@@ -1,6 +1,4 @@
-// Importe o método applyMiddleware
 import { createStore, applyMiddleware, compose } from 'redux';
-// Importe o redux-thunk
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
 
@@ -14,7 +12,6 @@ const composeWithDevTools = (
     }
 );
 
-// Aplique o middleware
 const store = createStore(
   rootReducer,
   composeWithDevTools(
